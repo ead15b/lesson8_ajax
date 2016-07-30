@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Erika Davis
+Date: 07/21/2016
 Filename:   Movie.html
 - ->
 <head>
@@ -52,7 +52,42 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
-
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">year:</h3>
+            <p class="list-group-item-text lead text-primary" id="year">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">type:</h3>
+            <p class="list-group-item-text lead text-primary" id="type">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">director:</h3>
+            <p class="list-group-item-text lead text-primary" id="director">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">language:</h3>
+            <p class="list-group-item-text lead text-primary" id="language">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">country:</h3>
+            <p class="list-group-item-text lead text-primary" id="country">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="awards">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">metascore:</h3>
+            <p class="list-group-item-text lead text-primary" id="metascore">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">response:</h3>
+            <p class="list-group-item-text lead text-primary" id="Response">  </p>
+        </a> 
     </div>
 </div> 
     <script>
@@ -70,6 +105,15 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#year').html(json.year);
+                     $('#type').html(json.type);
+                     $('#runtime').html(json.runtime);
+                     $('#director').html(json.director);
+                     $('#language').html(json.director);
+                     $('#country').html(json.country);
+                     $('#awards').html(json.country);
+                     $('#metascore').html(json.metascore);
+                     $('#response').html(json.response);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
